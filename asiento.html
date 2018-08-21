@@ -7,14 +7,14 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    
+
     <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
     <meta property="og:title" content="">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
     <meta property="og:site_name" content="">
     <meta property="og:description" content="">
-    
+
     <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="">
@@ -24,19 +24,19 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-  
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
-    
+
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  
+
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    
+
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
-    
+
     <!-- =======================================================
       Theme Name: Bell
       Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
@@ -46,9 +46,27 @@
   </head>
 
   <body>
- 
+    <!--mesenger en la web-->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="205987926504424" theme_color="#0084ff" logged_in_greeting="Bienvenido!! Envianos un mensaje para ponerte en contacto con nosotros" logged_out_greeting="Bienvenido!! Envianos un mensaje para ponerte en contacto con nosotros">
+</div>
+<!---------------------->
+
     <section class="hero">
-        
+
       <div class="container text-center">
 
         <div class="col-md-12">
@@ -56,24 +74,24 @@
             BIKE CENTER BICIX<br><br>
           </h1>
             <h2>BICIX PIURA - BICIX CHICLAYO</h2>
-            
+
           <p class="tagline">
                 Pasion sobre Ruedas
           </p>
           <a class="btn btn-full" href="#about">Descubre lo que tenemos para ti</a>
         </div>
       </div>
-      
+
     </section>
 
-      
+
   <header id="header">
     <div class="container">
-    
+
       <div id="logo" class="pull-left">
         <a href="index.html"><img src="img/bicix.png" alt="" title="" ></a>
       </div>
-        
+
       <nav id="nav-menu-container">
         <ul class="nav-menu">
             <li><a href="index.html">Principal</a></li>
@@ -109,19 +127,19 @@
               <li><a href="#"></a>Infladores</li>
               <li><a href="#">Frenos</a></li>
             </ul>
-          </li>    
+          </li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
         <!-- #nav-menu-container -->
-      
+
       <nav class="nav social-nav pull-right hidden-sm-down">
-         <a href="https://es-la.facebook.com/BICIX-PIURA-205987926504424/"><i class="fa fa-facebook"></i></a> 
+         <a href="https://es-la.facebook.com/BICIX-PIURA-205987926504424/"><i class="fa fa-facebook"></i></a>
       </nav>
     </div>
   </header>
-      
-      
+
+
       <section class="team" id="team">
           <center><h3>NUESTROS ASIENTOS</h3></center>
           <div class="container">
@@ -138,7 +156,7 @@
                       </a>
                   </div>
               </div>
-              
+
               <div class="col-sm-4 col-xs-6">
                 <div class="card card-block">
                     <a href="2-mtb-ddk-D3176GF.html"><img class="team-img" src="img/2-mtb-ddk-D3176GF.jpg">
@@ -151,7 +169,7 @@
                     </a>
                 </div>
               </div>
-              
+
               <div class="col-sm-4 col-xs-6">
                 <div class="card card-block">
                     <a href=1-mtb-ddk-5251.html><img class="team-img" src="img/1-mtb-ddk-5251.jpg">
@@ -165,10 +183,10 @@
                     </a>
                 </div>
               </div>
-              
+
           </div>
           </div>
-          
+
           <div class="container">
           <div class="row">
               <div class="col-sm-4 col-xs-6">
@@ -183,7 +201,7 @@
                       </a>
                   </div>
               </div>
-              
+
               <div class="col-sm-4 col-xs-6">
                 <div class="card card-block">
                     <a href="MTB%20-%20305R30.html"><img class="team-img" src="img/1-mtb-ddk-305R30.jpg">
@@ -196,7 +214,7 @@
                     </a>
                 </div>
               </div>
-              
+
               <div class="col-sm-4 col-xs-6">
                 <div class="card card-block">
                     <a href=MTB-3166.html><img class="team-img" src="img/1-mtb-ddk-3166.jpg">
@@ -210,10 +228,10 @@
                     </a>
                 </div>
               </div>
-              
+
           </div>
           </div>
-          
+
           <div class="container">
           <div class="row">
               <div class="col-sm-4 col-xs-6">
@@ -231,8 +249,8 @@
               </div>
           </div>
       </section>
-      
-      
+
+
  <footer class="site-footer">
       <div class="bottom">
         <div class="container">
@@ -266,11 +284,11 @@
     <script src="lib/stickyjs/sticky.js"></script>
     <script src="lib/parallax/parallax.js"></script>
     <script src="lib/lockfixed/lockfixed.min.js"></script>
-    
+
     <!-- Template Specisifc Custom Javascript File -->
     <script src="js/custom.js"></script>
-    
+
     <script src="contactform/contactform.js"></script>
-    
+
   </body>
 </html>
